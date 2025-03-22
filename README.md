@@ -16,25 +16,16 @@ Each model is optimized and evaluated using key performance metrics such as **ac
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/breast-cancer-classification.git
-   cd breast-cancer-classification
+   git clone https://github.com/dminh-nguyen/classification_comparison_breastcancer-dataset.git
    ```
 
-2. **Create a virtual environment (optional)**
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # For MacOS/Linux
-   venv\Scripts\activate  # For Windows
-   ```
-
-3. **Install dependencies**
+2. **Install dependencies**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Run a specific model**
+3. **Run a specific model**
 
    ```bash
    python scripts/knn_train.py
@@ -43,7 +34,7 @@ Each model is optimized and evaluated using key performance metrics such as **ac
    python scripts/lr_train.py
    ```
 
-5. **Run all models and compare results**
+4. **Run all models and compare results**
    ```bash
    python main.py
    ```
