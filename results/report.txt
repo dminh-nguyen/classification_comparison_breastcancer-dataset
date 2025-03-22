@@ -1,0 +1,130 @@
+# Model Comparison Report
+
+This report summarizes the performance of four classification models on the Breast Cancer dataset.
+
+## K-Nearest Neighbors Results
+```
+Accuracy: 0.956140350877193
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.95      0.93      0.94        42
+           1       0.96      0.97      0.97        72
+
+    accuracy                           0.96       114
+   macro avg       0.96      0.95      0.95       114
+weighted avg       0.96      0.96      0.96       114
+
+Best k: 8, Best Weights: uniform
+Optimized KNN Accuracy: 0.9736842105263158
+Optimized Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.98      0.95      0.96        42
+           1       0.97      0.99      0.98        72
+
+    accuracy                           0.97       114
+   macro avg       0.97      0.97      0.97       114
+weighted avg       0.97      0.97      0.97       114
+
+ROC-AUC Score: 0.9909060846560847
+
+```
+## Support Vector Machine Results
+```
+
+Basic SVM Performance
+Accuracy: 0.9561
+ROC-AUC Score: 0.9964
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.93      0.95      0.94        43
+           1       0.97      0.96      0.96        71
+
+    accuracy                           0.96       114
+   macro avg       0.95      0.96      0.95       114
+weighted avg       0.96      0.96      0.96       114
+
+Fitting 5 folds for each of 16 candidates, totalling 80 fits
+
+Best Parameters: {'C': 1, 'gamma': 'scale', 'kernel': 'rbf'}
+
+Optimized SVM Performance
+Accuracy: 0.9825
+ROC-AUC Score: 0.9974
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.95      0.98        43
+           1       0.97      1.00      0.99        71
+
+    accuracy                           0.98       114
+   macro avg       0.99      0.98      0.98       114
+weighted avg       0.98      0.98      0.98       114
+
+
+```
+## Decision Tree Results
+```
+
+ Basic Decision Tree Performance
+Accuracy: 0.9123
+ROC-AUC Score: 0.9157
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.85      0.93      0.89        42
+           1       0.96      0.90      0.93        72
+
+    accuracy                           0.91       114
+   macro avg       0.90      0.92      0.91       114
+weighted avg       0.92      0.91      0.91       114
+
+
+ Optimized Decision Tree Performance
+Best Parameters: {'criterion': 'gini', 'max_depth': 4, 'min_samples_leaf': 1, 'min_samples_split': 2}
+Optimized Accuracy: 0.9386
+Optimized ROC-AUC Score: 0.9365
+Optimized Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.91      0.93      0.92        42
+           1       0.96      0.94      0.95        72
+
+    accuracy                           0.94       114
+   macro avg       0.93      0.94      0.93       114
+weighted avg       0.94      0.94      0.94       114
+
+
+```
+## Logistic Regression Results
+```
+ Basic Logistic Regression Accuracy: 0.9825
+ Basic Logistic Regression ROC-AUC: 0.9954
+ Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98        42
+           1       0.99      0.99      0.99        72
+
+    accuracy                           0.98       114
+   macro avg       0.98      0.98      0.98       114
+weighted avg       0.98      0.98      0.98       114
+
+
+ Optimized Logistic Regression Accuracy: 0.9825
+ Optimized Logistic Regression ROC-AUC: 0.9960
+ Best Parameters: {'C': 0.08858667904100823, 'penalty': 'l2', 'solver': 'liblinear'}
+ Optimized Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98        42
+           1       0.99      0.99      0.99        72
+
+    accuracy                           0.98       114
+   macro avg       0.98      0.98      0.98       114
+weighted avg       0.98      0.98      0.98       114
+
+
+```
